@@ -2,10 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     <div id="page_list" runat="server"></div> 
   
-    <div><a href="AddPage.aspx">Add Page</a></div>
+    <div ><a class="btn" href="AddPage.aspx">Add Page</a></div>
    
     <div class="page" runat="server">   
-        <div class="listitem">
+        <div class="listitem" id="title">
             <%--<div class="col4">PAGE ID</div>--%>
             <div class="col4">PAGE TITLE</div>
             <div class="col4">PAGE BODY</div>

@@ -7,5 +7,5 @@
         <h2><span id="page_title" runat="server"></span></h2>
         <p><span id="page_body" runat="server"></span></p>
     </div>
-    <a href="ListOfPages.aspx">Back to List</a>
+    <a class="btn" href="ListOfPages.aspx">Back to List</a>
 </asp:Content>

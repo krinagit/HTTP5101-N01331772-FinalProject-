@@ -130,9 +130,8 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\Style.css" />
-    <Content Include="Content\Wireframe\wireframe1.jpg" />
-    <Content Include="Content\Wireframe\wireframe2.jpg" />
+    <Content Include="Content\StyleSheet.css" />
+    <Content Include="Data\page.sql" />
     <Content Include="Default.aspx" />
     <Content Include="DeletePage.aspx" />
     <Content Include="favicon.ico" />
@@ -146,6 +145,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Wireframe\wireframe1.jpg" />
+    <Content Include="Wireframe\wireframe2.jpg" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="ListOfPages.aspx" />
     <Content Include="Scripts\bootstrap.js" />

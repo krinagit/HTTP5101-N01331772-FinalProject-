@@ -1,0 +1,150 @@
+﻿/*GENERAL CSS*/
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-nav {
+     color:aliceblue;
+}
+   
+.main-content, .main-nav {
+   
+    margin: 0 auto;
+    padding: 0.5em;
+}
+a.btn{
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    padding:1em;
+    margin:1em;
+    background-color:darkslategray;
+    color:white;
+}
+
+header, footer {
+    background: #707f82;
+    width:100%;
+}
+
+header {
+    margin-bottom: 50px;
+    /* margin: 0;*/
+    padding: 1em;
+}
+/*CSS FOR TABLE-LIKE STYLING*/
+#MainContent_page_result {
+    font-weight: normal;
+}
+
+#page_result {
+    width: 100%;
+}
+
+.main-nav #title {
+    color: #f6fafd;
+    position: relative;
+    left: 0.5em;
+}
+
+#MainContent_page_list {
+    padding: 1em;
+    margin: 1em;
+    /* float:right;*/
+}
+
+.page #title {
+    background-color: #a8abab;
+}
+
+.listitem {
+    /* background: #dad6d6;*/
+    padding: 12px 5%;
+    width: 90%;
+    overflow: hidden;
+}
+
+    .listitem:after {
+        clear: both;
+    }
+
+    .listitem:nth-child(2n) {
+        background: #efe9e9;
+    }
+
+    .listitem:hover {
+        background: #d2c7c7;
+    }
+
+    .listitem[id$="_header"] {
+        background-color: darkcyan;
+        color: white;
+        font-weight: bold;
+    }
+
+.col4 {
+    float: left;
+    width: 21.73%;
+    color:black;
+    /*margin-right: 4.34%;*/
+}
+
+.main-content {
+    text-align: start;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 100%;
+}
+
+.MainContent_updatepage {
+    margin: 1em;
+    padding: 1em;
+}
+
+.formrow {
+    margin-bottom: 0.5%;
+}
+
+.page {
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+    .page:hover {
+        background-color: #bdbaba;
+        color: black;
+    }
+
+.add {
+    float: right;
+    font-weight: bold;
+}
+
+a {
+    margin-right: 2.5em;
+}
+
+    a:hover {
+        color: #03738C;
+        font-weight: bold;
+    }
+
+.main-nav #header-nav {
+    position: absolute;
+    top: 3em;
+    right: 2em;
+}
+
+footer {
+    position:absolute;
+    margin-top: 50px;
+    color: white;
+    padding: 1em;
+    width:100%;
+}
+
+
+
+
+
+                                   
+
+

@@ -15,6 +15,6 @@
     </div>
 
         <div class="Add">
-            <asp:Button OnClick="Add_Page" Text="Add Page" runat="server" />
+            <asp:Button class="btn" OnClick="Add_Page" Text="Add Page" runat="server" />
         </div>
 </asp:Content>
