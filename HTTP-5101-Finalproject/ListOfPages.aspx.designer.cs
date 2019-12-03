@@ -15,12 +15,21 @@ namespace HTTP_5101_Finalproject
     {
 
         /// <summary>
-        /// animal_result control.
+        /// page_list control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl animal_result;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_list;
+
+        /// <summary>
+        /// page_result control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl page_result;
     }
 }

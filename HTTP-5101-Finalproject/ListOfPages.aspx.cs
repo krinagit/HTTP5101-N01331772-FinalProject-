@@ -11,50 +11,36 @@ namespace HTTP_5101_Finalproject
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
-                An alternate way to fetch data without the SCHOOLDB.cs class
-                https://dev.mysql.com/doc/connector-net/en/connector-net-tutorials-sql-command.html
-            */
-
-            //resets the result set window
-            animal_result.InnerHtml = "";
+           
+            page_result.InnerHtml = "";
 
             string searchkey = "";
 
-            /*if (Page.IsPostBack)
-            {
-                //WARNING: This technique is vulnerable to SQL injections
-                //read more about SQL injections
-                //https://www.csoonline.com/article/3257429/what-is-sql-injection-how-sqli-attacks-work-and-how-to-prevent-them.html
-                //we will learn to defend against these attacks next semester
-                searchkey = student_search.Text;
-            }
-            */
-
-            string query = "select * from animallovers";
+           string query = "select * from page";
 
             if (searchkey != "")
             {
-                query += " WHERE animalid like '%" + searchkey + "%' ";
-                query += " or animalname like '%" + searchkey + "%' ";
-
+                query += " WHERE pageid like '%" + searchkey + "%' ";
+                query += " or pagetitle like '%" + searchkey + "%' ";
+                query += " or pagebody like '%" + searchkey + "%' ";
             }
-            sql_debugger.InnerHtml = query;
+          //  sql_debugger.InnerHtml = query;
 
-            var db = new Class1();
+            var db = new pageDB();
             List<Dictionary<String, String>> rs = db.List_Query(query);
             foreach (Dictionary<String, String> row in rs)
             {
-                animal_result.InnerHtml += "<div class=\"listitem\">";
-                string animalid = row["animalid"];
+                page_result.InnerHtml += "<div class=\"listitem\">";
+                string pageid = row["pageid"];
 
-                string animalname = row["animalname"];
-                animal_result.InnerHtml += "<div class=\"col4\"><a href=\"ShowStudent.aspx?studentid=" + animalid + "\">" + animalname + "</a></div>";
+                string pagetitle = row["pagetitle"];
+                page_result.InnerHtml += "<div class=\"col4\"><a href=\"ViewPage.aspx?pageid=" + pageid + "\">" + pagetitle + "</a></div>";
 
-                string aboutanimal = row["aboutanimal"];
-                animal_result.InnerHtml += "<div class=\"col4\">" + aboutanimal + "</div>";
+                string pagebody = row["pagebody"];
+                page_result.InnerHtml += "<div class=\"col4\">" + pagebody + "</div>";
 
-                animal_result.InnerHtml += "</div>";
+                page_result.InnerHtml += "</div>";
+                page_list.InnerHtml += "<a href=\"ViewPage.aspx?pageid=" + pageid + "\">" + pagetitle + "</a>";
             }
 
 
