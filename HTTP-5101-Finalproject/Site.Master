@@ -1,5 +1,5 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="HTTP_5101_Finalproject.SiteMaster" %>
-
+<%@ Register Src="~/MainNav.ascx" TagName="MainNav" TagPrefix="asp"%>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -7,16 +7,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Application</title>
-    <link rel="stylesheet" type="text/css" href="/Content/StyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="/Content/StyleSheet1.css" />
 </head>
 <body>
     <header>
         <div class="main-nav">
             <h2 id="title">Manage Pages</h2>
+              <asp:MainNav runat="server"></asp:MainNav>
             <div id="header-nav">
-            <ul>
+           <%-- <ul>
                 <li><a href="ListOfPages.aspx"></a></li>
-            </ul>
+            </ul>--%>
            </div>
         </div>
     </header>

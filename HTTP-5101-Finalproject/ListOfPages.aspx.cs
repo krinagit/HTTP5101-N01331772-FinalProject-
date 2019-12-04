@@ -40,7 +40,8 @@ namespace HTTP_5101_Finalproject
                 page_result.InnerHtml += "<div class=\"col4\">" + pagebody + "</div>";
 
                 page_result.InnerHtml += "</div>";
-                page_list.InnerHtml += "<a href=\"ViewPage.aspx?pageid=" + pageid + "\">" + pagetitle + "</a>";
+              /*  page_list.InnerHtml += "<a href=\"ViewPage.aspx?pageid=" + pageid + "\">" + pagetitle + "</a>";*/
+              // i have commented this code because i have used usercontroller
             }
 
 

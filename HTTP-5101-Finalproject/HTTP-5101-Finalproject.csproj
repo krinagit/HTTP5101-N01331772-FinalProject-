@@ -130,7 +130,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="Content\StyleSheet.css" />
+    <Content Include="Content\StyleSheet1.css" />
     <Content Include="Data\page.sql" />
     <Content Include="Default.aspx" />
     <Content Include="DeletePage.aspx" />
@@ -145,6 +145,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="MainNav.ascx" />
+    <Content Include="StyleSheet1.css" />
     <Content Include="Wireframe\wireframe1.jpg" />
     <Content Include="Wireframe\wireframe2.jpg" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
@@ -210,6 +212,13 @@
       <DependentUpon>DeletePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="HTTP_Page.cs" />
+    <Compile Include="MainNav.ascx.cs">
+      <DependentUpon>MainNav.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainNav.ascx.designer.cs">
+      <DependentUpon>MainNav.ascx</DependentUpon>
+    </Compile>
     <Compile Include="pageDB.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
